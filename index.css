@@ -1,4 +1,11 @@
+th,
+td {
+  border: 0.5rem solid tomato;
+  padding: 0.5rem;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
 table {
-  border: 0.5rem dashed tomato;
-  padding: 0.1rem;
+  align-content: center;
 }
