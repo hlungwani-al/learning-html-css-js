@@ -7,6 +7,8 @@
     <link rel="ico" type="image/x-icon" href="myicon.png" />
     <link rel="stylesheet" type="text/css" href="./index.css" />
     <script type="text/javascript" src="./main.js" defer></script>
+    <meta http-equiv="refresh" content="120" />
+    <!-- refresh the page every 120 seconds -->
   </head>
   <body>
     <!-- im about to create a table -->
@@ -44,9 +46,48 @@
       <dt id="term3">term3</dt>
       <dd>description3</dd>
     </dl>
+    <p id="time">The time is....</p>
     <!-- some javascription-->
     <button onclick="changeTerm1()">Term 1 change</button>
     <button onclick="changeTerm2()">Term 2 change</button>
-    <button onclick="changeTerm3()">Term 3 change</button>
+    <button onclick="changeTerm3()">Term 3 change</button><br />
+    <hr />
+    <button onclick="getTime()">Show Time</button>
+    <!--some code-->
+    <pre>
+        <code>
+            x = 10;
+            y = 12;
+            z = x+y;
+        </code>
+    </pre>
+    <samp>file not found</samp>
+    <!--a form -->
+    <form action="#">
+      <label for="names">Names: </label>
+      <input type="text" id="names" placeholder="Amukelani Lyborn" /><br />
+      <label for="surname">Surname: </label>
+      <input type="text" id="surname" placeholder="Hlungwani" /><br />
+      <label for="age">Age: </label>
+      <input type="number" id="age" placeholder="30" /> <br />
+
+      <!-- Radio buttons -->
+      <p>fav fruit:</p>
+      <input type="radio" id="apple" name="fruits" />
+      <label for="apple">Apple</label><br />
+      <input type="radio" id="banana" name="fruits" />
+      <label for="banana">Banana</label><br />
+      <input type="radio" id="carrot" name="fruits" />
+      <label for="carrot">Carrot</label><br />
+
+      <label for="dropdown">Salary Expectation:</label>
+      <select id="dropdown" name="salaryE">
+        <option value="5000">5000</option>
+        <option value="8000">8000</option>
+        <option value="12000">12000</option>
+        <option value="20000">20000</option>
+        <option value="30000">30000</option>
+      </select>
+    </form>
   </body>
 </html>
