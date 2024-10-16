@@ -12,5 +12,34 @@ function changeTerm3(){
 }
 function getTime(){
     document.getElementById('time').innerHTML = Date();
-    alert('we are displaying the time now...')
+    alert('we are displaying the time now...');
+}
+
+function greeting(a){
+    a = "Amukelani";
+    console.log('hello ', a)
+}
+
+let myArray = [1,2,3,4,5];
+let valuePairs = {name:"Amukelani", Age:30};
+
+// == checks if the value is the same
+// === checks the type & value
+
+let A = 10;
+
+if (A == 4 ){
+    console.log('A is: ', A)
+}
+else if (A === 4 ){
+    console.log('A is: ', A)
+}
+else if (A < 4 ){
+    console.log('4 is > ', A)
+}
+else if (A > 4 ){
+    console.log('4 is < ', A)
+}
+else if (A != 4 ){
+    console.log('4 is not equal to ', A)
 }
