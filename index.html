@@ -96,5 +96,33 @@
       />
       <samp>browser doesnt support videos</samp>
     </video>
+
+    <audio controls autoplay>
+      <source src="./audio.mp3" type="audio/mpeg" />
+      <samp>browser doesnt support videos</samp>
+    </audio>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/UMEcLEEH1KQ?si=IXYCM64BcanZ2QBx"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+
+    <div
+      class="box1"
+      id="box1"
+      ondrop="drop(event)"
+      ondragover="allowDrop(event)"
+    ></div>
+    <img
+      src="./images.jpeg"
+      id="myPic"
+      draggable="true"
+      ondragstart="drag(event)"
+    />
   </body>
 </html>

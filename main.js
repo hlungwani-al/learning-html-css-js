@@ -43,3 +43,16 @@ else if (A > 4 ){
 else if (A != 4 ){
     console.log('4 is not equal to ', A)
 }
+
+function allowDrop (ev){
+    ev.preventDefault();
+}
+
+function drag(ev){
+    ev.dataTransfer.setData("text", ev.targetid);
+}
+function drop(ev){
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
